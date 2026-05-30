@@ -36,27 +36,6 @@ fetch("map.geojson")
   .then(response => response.json())
   .then(data => {
     L.geoJSON(data, {
-      // 線データの見た目
-      style: function(feature) {
-        const type = feature.geometry.type;
-
-        if (type === "LineString" || type === "MultiLineString") {
-          return {
-            color: "blue",
-            weight: 5
-          };
-        }
-      },
-
-      // 点データの見た目
-      pointToLayer: function(feature, latlng) {
-        return L.circleMarker(latlng, {
-          radius: 7,
-          color: "red",
-          fillColor: "red",
-          fillOpacity: 0.9
-        });
-      },
 
       // クリック時のポップアップ
       onEachFeature: function(feature, layer) {
