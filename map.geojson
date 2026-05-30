@@ -1,0 +1,3197 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          [
+            -224.304058,
+            34.835905
+          ],
+          [
+            -224.303859,
+            34.835958
+          ],
+          [
+            -224.303527,
+            34.835914
+          ],
+          [
+            -224.302706,
+            34.835778
+          ],
+          [
+            -224.301129,
+            34.835738
+          ],
+          [
+            -224.296019,
+            34.835716
+          ],
+          [
+            -224.295639,
+            34.835665
+          ],
+          [
+            -224.295019,
+            34.835527
+          ],
+          [
+            -224.29345,
+            34.834978
+          ],
+          [
+            -224.291419,
+            34.834241
+          ],
+          [
+            -224.289585,
+            34.833561
+          ],
+          [
+            -224.28837,
+            34.833136
+          ],
+          [
+            -224.287747,
+            34.83288
+          ],
+          [
+            -224.28742,
+            34.832715
+          ],
+          [
+            -224.287157,
+            34.832528
+          ],
+          [
+            -224.286962,
+            34.832348
+          ],
+          [
+            -224.286758,
+            34.832138
+          ],
+          [
+            -224.286503,
+            34.831753
+          ],
+          [
+            -224.28606,
+            34.831121
+          ],
+          [
+            -224.285596,
+            34.830465
+          ],
+          [
+            -224.285197,
+            34.829844
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "_umap_options": {
+          "opacity": 1,
+          "color": "Gold",
+          "weight": 5
+        },
+        "name": "自転車レーン"
+      },
+      "id": "ObcSJ"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          [
+            -224.29864,
+            34.846349
+          ],
+          [
+            -224.299654,
+            34.844213
+          ],
+          [
+            -224.300984,
+            34.842263
+          ],
+          [
+            -224.30563,
+            34.836905
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Blue",
+          "opacity": 1
+        }
+      },
+      "id": "uaCky"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          [
+            -224.288844,
+            34.836289
+          ],
+          [
+            -224.288775,
+            34.836782
+          ],
+          [
+            -224.288909,
+            34.837851
+          ],
+          [
+            -224.28907,
+            34.838995
+          ],
+          [
+            -224.289359,
+            34.839875
+          ],
+          [
+            -224.289767,
+            34.840601
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Blue",
+          "opacity": 1,
+          "weight": 5
+        }
+      },
+      "id": "PSdVz"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          [
+            -224.291832,
+            34.845129
+          ],
+          [
+            -224.292353,
+            34.845349
+          ],
+          [
+            -224.29297,
+            34.84541
+          ],
+          [
+            -224.295459,
+            34.845648
+          ],
+          [
+            -224.298592,
+            34.846343
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Blue",
+          "opacity": 1,
+          "weight": 5
+        }
+      },
+      "id": "agiZ8"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          [
+            -224.285773,
+            34.841634
+          ],
+          [
+            -224.286637,
+            34.841282
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Blue",
+          "opacity": 1,
+          "weight": 5
+        }
+      },
+      "id": "rt4rw"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          [
+            -224.281893,
+            34.835676
+          ],
+          [
+            -224.282483,
+            34.836429
+          ],
+          [
+            -224.283363,
+            34.837828
+          ],
+          [
+            -224.284205,
+            34.839201
+          ],
+          [
+            -224.285063,
+            34.840511
+          ],
+          [
+            -224.285792,
+            34.841699
+          ],
+          [
+            -224.286489,
+            34.84268
+          ],
+          [
+            -224.286779,
+            34.843642
+          ],
+          [
+            -224.287004,
+            34.845464
+          ],
+          [
+            -224.287004,
+            34.845658
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "_umap_options": {
+          "opacity": 1,
+          "weight": 5,
+          "color": "Blue"
+        }
+      },
+      "id": "I9S9h"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -224.282376,
+          34.83532
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Ball"
+        }
+      },
+      "id": "Iv02H"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -224.282268,
+          34.835196
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Ball"
+        }
+      },
+      "id": "GItez"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -224.292331,
+          34.837624
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Ball"
+        }
+      },
+      "id": "pMzxs"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -224.292428,
+          34.837659
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Ball"
+        }
+      },
+      "id": "Uw0EX"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -224.291376,
+          34.838724
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Ball"
+        }
+      },
+      "id": "4w5kd"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -224.291452,
+          34.83879
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Ball"
+        }
+      },
+      "id": "lRuXx"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -224.291044,
+          34.839133
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Ball"
+        }
+      },
+      "id": "pJ4hT"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -224.290824,
+          34.839372
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Ball"
+        }
+      },
+      "id": "imnuW"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -224.290904,
+          34.839416
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Ball"
+        }
+      },
+      "id": "l4e0c"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -224.290352,
+          34.839913
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Ball"
+        }
+      },
+      "id": "YjD0S"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -224.290443,
+          34.839948
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Ball"
+        }
+      },
+      "id": "7dTWX"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -224.292594,
+          34.839482
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Ball"
+        }
+      },
+      "id": "4sBsd"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -224.292133,
+          34.840141
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Ball"
+        }
+      },
+      "id": "Q4PRd"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -224.292047,
+          34.840084
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Ball"
+        }
+      },
+      "id": "OIJ9H"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -224.291682,
+          34.840709
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Ball"
+        }
+      },
+      "id": "xyi83"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -224.291559,
+          34.840639
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Ball"
+        }
+      },
+      "id": "umMkU"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -224.295856,
+          34.843302
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Ball"
+        }
+      },
+      "id": "2PlK7"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -224.296666,
+          34.843227
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Ball"
+        }
+      },
+      "id": "miIGK"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -224.298946,
+          34.842532
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Ball"
+        }
+      },
+      "id": "wwFrD"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -224.300238,
+          34.840999
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Ball"
+        }
+      },
+      "id": "Qck1E"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -224.294043,
+          34.836966
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Ball"
+        }
+      },
+      "id": "AZ4rX"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -224.293973,
+          34.837046
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Ball"
+        }
+      },
+      "id": "DHPTp"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -224.293147,
+          34.836742
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Ball"
+        }
+      },
+      "id": "3o4mK"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -224.293356,
+          34.836493
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Ball"
+        }
+      },
+      "id": "heOu8"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -224.293672,
+          34.83621
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Ball"
+        }
+      },
+      "id": "vY7sk"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -224.293737,
+          34.83606
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Ball"
+        }
+      },
+      "id": "Vux6D"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -224.300855,
+          34.837531
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Ball"
+        }
+      },
+      "id": "N13yr"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -224.301019,
+          34.836643
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Ball"
+        }
+      },
+      "id": "pCkc9"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -224.301145,
+          34.836659
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Ball",
+          "iconSize": 48,
+          "iconUrl": "/uploads/pictogram/circle.svg"
+        }
+      },
+      "id": "7YJhw"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -224.283392,
+          34.837813
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Ball"
+        }
+      },
+      "id": "VYVw8"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -224.285816,
+          34.841627
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Ball"
+        }
+      },
+      "id": "SOge0"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -224.286267,
+          34.841398
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Ball"
+        }
+      },
+      "id": "rlwgV"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -224.286304,
+          34.841462
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Ball"
+        }
+      },
+      "id": "MXMJ6"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -224.286608,
+          34.841308
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Ball"
+        }
+      },
+      "id": "PFo8z"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -224.286849,
+          34.842428
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Ball"
+        }
+      },
+      "id": "bAGIu"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -224.290545,
+          34.845164
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Ball"
+        }
+      },
+      "id": "hU0Yl"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -224.289858,
+          34.842295
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Ball"
+        }
+      },
+      "id": "h0xpH"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -224.289778,
+          34.842163
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Ball"
+        }
+      },
+      "id": "Yv5Z9"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -224.291634,
+          34.844165
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Ball"
+        }
+      },
+      "id": "R1wUr"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -224.290443,
+          34.843373
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Ball"
+        }
+      },
+      "id": "6yuAz"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -224.290363,
+          34.843263
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Ball"
+        }
+      },
+      "id": "7b7SF"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -224.291033,
+          34.843087
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Ball"
+        }
+      },
+      "id": "YZbiM"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -224.290159,
+          34.841907
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Ball"
+        }
+      },
+      "id": "1V5eX"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -224.289252,
+          34.834796
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Ball"
+        },
+        "name": "一時停止"
+      },
+      "id": "KsH1e"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -224.300834,
+          34.839414
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Ball"
+        },
+        "name": "一時停止"
+      },
+      "id": "06pPB"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -224.300751,
+          34.840123
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Ball"
+        },
+        "name": "一時停止"
+      },
+      "id": "T6yMR"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -224.300504,
+          34.840682
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Ball"
+        },
+        "name": "一時停止"
+      },
+      "id": "ar0qh"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -224.299463,
+          34.84186
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Ball"
+        },
+        "name": "一時停止"
+      },
+      "id": "vRy12"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -224.298938,
+          34.842501
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Ball"
+        },
+        "name": "一時停止"
+      },
+      "id": "B49DG"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          -224.298881,
+          34.842505
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Ball"
+        },
+        "name": "一時停止"
+      },
+      "id": "vv6Nl"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              135.68,
+              34.82
+            ],
+            [
+              135.68,
+              34.85
+            ],
+            [
+              135.73,
+              34.85
+            ],
+            [
+              135.73,
+              34.82
+            ],
+            [
+              135.68,
+              34.82
+            ]
+          ],
+          [
+            [
+              135.713038,
+              34.825796
+            ],
+            [
+              135.712523,
+              34.826416
+            ],
+            [
+              135.713317,
+              34.826751
+            ],
+            [
+              135.713468,
+              34.826909
+            ],
+            [
+              135.713532,
+              34.827314
+            ],
+            [
+              135.713081,
+              34.82772
+            ],
+            [
+              135.712888,
+              34.828389
+            ],
+            [
+              135.712674,
+              34.829234
+            ],
+            [
+              135.712631,
+              34.830133
+            ],
+            [
+              135.712695,
+              34.830943
+            ],
+            [
+              135.712609,
+              34.831806
+            ],
+            [
+              135.71233,
+              34.832281
+            ],
+            [
+              135.711837,
+              34.832845
+            ],
+            [
+              135.708232,
+              34.834043
+            ],
+            [
+              135.70437,
+              34.835434
+            ],
+            [
+              135.700099,
+              34.835505
+            ],
+            [
+              135.69819,
+              34.835557
+            ],
+            [
+              135.696323,
+              34.835681
+            ],
+            [
+              135.695872,
+              34.835593
+            ],
+            [
+              135.694048,
+              34.836966
+            ],
+            [
+              135.698447,
+              34.841915
+            ],
+            [
+              135.70128,
+              34.846582
+            ],
+            [
+              135.70437,
+              34.84579
+            ],
+            [
+              135.707363,
+              34.845513
+            ],
+            [
+              135.70821,
+              34.845314
+            ],
+            [
+              135.709455,
+              34.845455
+            ],
+            [
+              135.710442,
+              34.845367
+            ],
+            [
+              135.711858,
+              34.845666
+            ],
+            [
+              135.71321,
+              34.845613
+            ],
+            [
+              135.713553,
+              34.843747
+            ],
+            [
+              135.713789,
+              34.842831
+            ],
+            [
+              135.714304,
+              34.841986
+            ],
+            [
+              135.715699,
+              34.840154
+            ],
+            [
+              135.717523,
+              34.836984
+            ],
+            [
+              135.718489,
+              34.835593
+            ],
+            [
+              135.718596,
+              34.835434
+            ],
+            [
+              135.717931,
+              34.8351
+            ],
+            [
+              135.717459,
+              34.834162
+            ],
+            [
+              135.716257,
+              34.83178
+            ],
+            [
+              135.715388,
+              34.829768
+            ],
+            [
+              135.71424,
+              34.827135
+            ],
+            [
+              135.7138,
+              34.826342
+            ],
+            [
+              135.713071,
+              34.825963
+            ],
+            [
+              135.713135,
+              34.82584
+            ],
+            [
+              135.713038,
+              34.825796
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "fill": "#3a6bc4",
+        "fill-opacity": 0.55,
+        "stroke": "#3a6bc4",
+        "stroke-width": 1.5,
+        "name": "マスクエリア"
+      },
+      "id": "3MH0h"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          [
+            135.713038,
+            34.825796
+          ],
+          [
+            135.712523,
+            34.826416
+          ],
+          [
+            135.713317,
+            34.826751
+          ],
+          [
+            135.713468,
+            34.826909
+          ],
+          [
+            135.713532,
+            34.827314
+          ],
+          [
+            135.713081,
+            34.82772
+          ],
+          [
+            135.712888,
+            34.828389
+          ],
+          [
+            135.712674,
+            34.829234
+          ],
+          [
+            135.712631,
+            34.830133
+          ],
+          [
+            135.712695,
+            34.830943
+          ],
+          [
+            135.712609,
+            34.831806
+          ],
+          [
+            135.71233,
+            34.832281
+          ],
+          [
+            135.711837,
+            34.832845
+          ],
+          [
+            135.708232,
+            34.834043
+          ],
+          [
+            135.70437,
+            34.835434
+          ],
+          [
+            135.700099,
+            34.835505
+          ],
+          [
+            135.69819,
+            34.835557
+          ],
+          [
+            135.696323,
+            34.835681
+          ],
+          [
+            135.695872,
+            34.835593
+          ],
+          [
+            135.694048,
+            34.836966
+          ],
+          [
+            135.698447,
+            34.841915
+          ],
+          [
+            135.70128,
+            34.846582
+          ],
+          [
+            135.70437,
+            34.84579
+          ],
+          [
+            135.707363,
+            34.845513
+          ],
+          [
+            135.70821,
+            34.845314
+          ],
+          [
+            135.709455,
+            34.845455
+          ],
+          [
+            135.710442,
+            34.845367
+          ],
+          [
+            135.711858,
+            34.845666
+          ],
+          [
+            135.71321,
+            34.845613
+          ],
+          [
+            135.713553,
+            34.843747
+          ],
+          [
+            135.713789,
+            34.842831
+          ],
+          [
+            135.714304,
+            34.841986
+          ],
+          [
+            135.715699,
+            34.840154
+          ],
+          [
+            135.717523,
+            34.836984
+          ],
+          [
+            135.718489,
+            34.835593
+          ],
+          [
+            135.718596,
+            34.835434
+          ],
+          [
+            135.717931,
+            34.8351
+          ],
+          [
+            135.717459,
+            34.834162
+          ],
+          [
+            135.716257,
+            34.83178
+          ],
+          [
+            135.715388,
+            34.829768
+          ],
+          [
+            135.71424,
+            34.827135
+          ],
+          [
+            135.7138,
+            34.826342
+          ],
+          [
+            135.713071,
+            34.825963
+          ],
+          [
+            135.713135,
+            34.82584
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "stroke": "#3a6bc4",
+        "stroke-width": 2,
+        "name": "外周線"
+      },
+      "id": "awh82"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              135.68,
+              34.82
+            ],
+            [
+              135.68,
+              34.85
+            ],
+            [
+              135.73,
+              34.85
+            ],
+            [
+              135.73,
+              34.82
+            ],
+            [
+              135.68,
+              34.82
+            ]
+          ],
+          [
+            [
+              135.713038,
+              34.825796
+            ],
+            [
+              135.712523,
+              34.826416
+            ],
+            [
+              135.713317,
+              34.826751
+            ],
+            [
+              135.713468,
+              34.826909
+            ],
+            [
+              135.713532,
+              34.827314
+            ],
+            [
+              135.713081,
+              34.82772
+            ],
+            [
+              135.712888,
+              34.828389
+            ],
+            [
+              135.712674,
+              34.829234
+            ],
+            [
+              135.712631,
+              34.830133
+            ],
+            [
+              135.712695,
+              34.830943
+            ],
+            [
+              135.712609,
+              34.831806
+            ],
+            [
+              135.71233,
+              34.832281
+            ],
+            [
+              135.711837,
+              34.832845
+            ],
+            [
+              135.708232,
+              34.834043
+            ],
+            [
+              135.70437,
+              34.835434
+            ],
+            [
+              135.700099,
+              34.835505
+            ],
+            [
+              135.69819,
+              34.835557
+            ],
+            [
+              135.696323,
+              34.835681
+            ],
+            [
+              135.695872,
+              34.835593
+            ],
+            [
+              135.694048,
+              34.836966
+            ],
+            [
+              135.698447,
+              34.841915
+            ],
+            [
+              135.70128,
+              34.846582
+            ],
+            [
+              135.70437,
+              34.84579
+            ],
+            [
+              135.707363,
+              34.845513
+            ],
+            [
+              135.70821,
+              34.845314
+            ],
+            [
+              135.709455,
+              34.845455
+            ],
+            [
+              135.710442,
+              34.845367
+            ],
+            [
+              135.711858,
+              34.845666
+            ],
+            [
+              135.71321,
+              34.845613
+            ],
+            [
+              135.713553,
+              34.843747
+            ],
+            [
+              135.713789,
+              34.842831
+            ],
+            [
+              135.714304,
+              34.841986
+            ],
+            [
+              135.715699,
+              34.840154
+            ],
+            [
+              135.717523,
+              34.836984
+            ],
+            [
+              135.718489,
+              34.835593
+            ],
+            [
+              135.718596,
+              34.835434
+            ],
+            [
+              135.717931,
+              34.8351
+            ],
+            [
+              135.717459,
+              34.834162
+            ],
+            [
+              135.716257,
+              34.83178
+            ],
+            [
+              135.715388,
+              34.829768
+            ],
+            [
+              135.71424,
+              34.827135
+            ],
+            [
+              135.7138,
+              34.826342
+            ],
+            [
+              135.713071,
+              34.825963
+            ],
+            [
+              135.713135,
+              34.82584
+            ],
+            [
+              135.713038,
+              34.825796
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "fill": "#3a6bc4",
+        "fill-opacity": 0.55,
+        "stroke": "#3a6bc4",
+        "stroke-width": 1.5,
+        "name": "マスクエリア"
+      },
+      "id": "3MH0h"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          [
+            -224.286962,
+            34.825796
+          ],
+          [
+            -224.287477,
+            34.826416
+          ],
+          [
+            -224.286683,
+            34.826751
+          ],
+          [
+            -224.286532,
+            34.826909
+          ],
+          [
+            -224.286468,
+            34.827314
+          ],
+          [
+            -224.286919,
+            34.82772
+          ],
+          [
+            -224.287112,
+            34.828389
+          ],
+          [
+            -224.287326,
+            34.829234
+          ],
+          [
+            -224.287369,
+            34.830133
+          ],
+          [
+            -224.287305,
+            34.830943
+          ],
+          [
+            -224.287391,
+            34.831806
+          ],
+          [
+            -224.28767,
+            34.832281
+          ],
+          [
+            -224.288163,
+            34.832845
+          ],
+          [
+            -224.291768,
+            34.834043
+          ],
+          [
+            -224.29563,
+            34.835434
+          ],
+          [
+            -224.299901,
+            34.835505
+          ],
+          [
+            -224.30181,
+            34.835557
+          ],
+          [
+            -224.303677,
+            34.835681
+          ],
+          [
+            -224.304128,
+            34.835593
+          ],
+          [
+            -224.305952,
+            34.836966
+          ],
+          [
+            -224.301553,
+            34.841915
+          ],
+          [
+            -224.29872,
+            34.846582
+          ],
+          [
+            -224.29563,
+            34.84579
+          ],
+          [
+            -224.292637,
+            34.845513
+          ],
+          [
+            -224.29179,
+            34.845314
+          ],
+          [
+            -224.290545,
+            34.845455
+          ],
+          [
+            -224.289558,
+            34.845367
+          ],
+          [
+            -224.288142,
+            34.845666
+          ],
+          [
+            -224.28679,
+            34.845613
+          ],
+          [
+            -224.286447,
+            34.843747
+          ],
+          [
+            -224.286211,
+            34.842831
+          ],
+          [
+            -224.285696,
+            34.841986
+          ],
+          [
+            -224.284301,
+            34.840154
+          ],
+          [
+            -224.282477,
+            34.836984
+          ],
+          [
+            -224.281511,
+            34.835593
+          ],
+          [
+            -224.281404,
+            34.835434
+          ],
+          [
+            -224.282069,
+            34.8351
+          ],
+          [
+            -224.282541,
+            34.834162
+          ],
+          [
+            -224.283743,
+            34.83178
+          ],
+          [
+            -224.284612,
+            34.829768
+          ],
+          [
+            -224.28576,
+            34.827135
+          ],
+          [
+            -224.2862,
+            34.826342
+          ],
+          [
+            -224.286929,
+            34.825963
+          ],
+          [
+            -224.286865,
+            34.82584
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "stroke": "#3a6bc4",
+        "stroke-width": 2,
+        "name": "外周線"
+      },
+      "id": "awh82"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              135.68,
+              34.82
+            ],
+            [
+              135.68,
+              34.85
+            ],
+            [
+              135.73,
+              34.85
+            ],
+            [
+              135.73,
+              34.82
+            ],
+            [
+              135.68,
+              34.82
+            ]
+          ],
+          [
+            [
+              135.713038,
+              34.825796
+            ],
+            [
+              135.712523,
+              34.826416
+            ],
+            [
+              135.713317,
+              34.826751
+            ],
+            [
+              135.713468,
+              34.826909
+            ],
+            [
+              135.713532,
+              34.827314
+            ],
+            [
+              135.713081,
+              34.82772
+            ],
+            [
+              135.712888,
+              34.828389
+            ],
+            [
+              135.712674,
+              34.829234
+            ],
+            [
+              135.712631,
+              34.830133
+            ],
+            [
+              135.712695,
+              34.830943
+            ],
+            [
+              135.712609,
+              34.831806
+            ],
+            [
+              135.71233,
+              34.832281
+            ],
+            [
+              135.711837,
+              34.832845
+            ],
+            [
+              135.708232,
+              34.834043
+            ],
+            [
+              135.70437,
+              34.835434
+            ],
+            [
+              135.700099,
+              34.835505
+            ],
+            [
+              135.69819,
+              34.835557
+            ],
+            [
+              135.696323,
+              34.835681
+            ],
+            [
+              135.695872,
+              34.835593
+            ],
+            [
+              135.694048,
+              34.836966
+            ],
+            [
+              135.698447,
+              34.841915
+            ],
+            [
+              135.70128,
+              34.846582
+            ],
+            [
+              135.70437,
+              34.84579
+            ],
+            [
+              135.707363,
+              34.845513
+            ],
+            [
+              135.70821,
+              34.845314
+            ],
+            [
+              135.709455,
+              34.845455
+            ],
+            [
+              135.710442,
+              34.845367
+            ],
+            [
+              135.711858,
+              34.845666
+            ],
+            [
+              135.71321,
+              34.845613
+            ],
+            [
+              135.713553,
+              34.843747
+            ],
+            [
+              135.713789,
+              34.842831
+            ],
+            [
+              135.714304,
+              34.841986
+            ],
+            [
+              135.715699,
+              34.840154
+            ],
+            [
+              135.717523,
+              34.836984
+            ],
+            [
+              135.718489,
+              34.835593
+            ],
+            [
+              135.718596,
+              34.835434
+            ],
+            [
+              135.717931,
+              34.8351
+            ],
+            [
+              135.717459,
+              34.834162
+            ],
+            [
+              135.716257,
+              34.83178
+            ],
+            [
+              135.715388,
+              34.829768
+            ],
+            [
+              135.71424,
+              34.827135
+            ],
+            [
+              135.7138,
+              34.826342
+            ],
+            [
+              135.713071,
+              34.825963
+            ],
+            [
+              135.713135,
+              34.82584
+            ],
+            [
+              135.713038,
+              34.825796
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "fill": "#3a6bc4",
+        "fill-opacity": 0.55,
+        "stroke": "#3a6bc4",
+        "stroke-width": 1.5,
+        "name": "マスクエリア"
+      },
+      "id": "3MH0h"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          [
+            -224.286962,
+            34.825796
+          ],
+          [
+            -224.287477,
+            34.826416
+          ],
+          [
+            -224.286683,
+            34.826751
+          ],
+          [
+            -224.286532,
+            34.826909
+          ],
+          [
+            -224.286468,
+            34.827314
+          ],
+          [
+            -224.286919,
+            34.82772
+          ],
+          [
+            -224.287112,
+            34.828389
+          ],
+          [
+            -224.287326,
+            34.829234
+          ],
+          [
+            -224.287369,
+            34.830133
+          ],
+          [
+            -224.287305,
+            34.830943
+          ],
+          [
+            -224.287391,
+            34.831806
+          ],
+          [
+            -224.28767,
+            34.832281
+          ],
+          [
+            -224.288163,
+            34.832845
+          ],
+          [
+            -224.291768,
+            34.834043
+          ],
+          [
+            -224.29563,
+            34.835434
+          ],
+          [
+            -224.299901,
+            34.835505
+          ],
+          [
+            -224.30181,
+            34.835557
+          ],
+          [
+            -224.303677,
+            34.835681
+          ],
+          [
+            -224.304128,
+            34.835593
+          ],
+          [
+            -224.305952,
+            34.836966
+          ],
+          [
+            -224.301553,
+            34.841915
+          ],
+          [
+            -224.29872,
+            34.846582
+          ],
+          [
+            -224.29563,
+            34.84579
+          ],
+          [
+            -224.292637,
+            34.845513
+          ],
+          [
+            -224.29179,
+            34.845314
+          ],
+          [
+            -224.290545,
+            34.845455
+          ],
+          [
+            -224.289558,
+            34.845367
+          ],
+          [
+            -224.288142,
+            34.845666
+          ],
+          [
+            -224.28679,
+            34.845613
+          ],
+          [
+            -224.286447,
+            34.843747
+          ],
+          [
+            -224.286211,
+            34.842831
+          ],
+          [
+            -224.285696,
+            34.841986
+          ],
+          [
+            -224.284301,
+            34.840154
+          ],
+          [
+            -224.282477,
+            34.836984
+          ],
+          [
+            -224.281511,
+            34.835593
+          ],
+          [
+            -224.281404,
+            34.835434
+          ],
+          [
+            -224.282069,
+            34.8351
+          ],
+          [
+            -224.282541,
+            34.834162
+          ],
+          [
+            -224.283743,
+            34.83178
+          ],
+          [
+            -224.284612,
+            34.829768
+          ],
+          [
+            -224.28576,
+            34.827135
+          ],
+          [
+            -224.2862,
+            34.826342
+          ],
+          [
+            -224.286929,
+            34.825963
+          ],
+          [
+            -224.286865,
+            34.82584
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "stroke": "#3a6bc4",
+        "stroke-width": 2,
+        "name": "外周線"
+      },
+      "id": "awh82"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              135.68,
+              34.82
+            ],
+            [
+              135.68,
+              34.85
+            ],
+            [
+              135.73,
+              34.85
+            ],
+            [
+              135.73,
+              34.82
+            ],
+            [
+              135.68,
+              34.82
+            ]
+          ],
+          [
+            [
+              135.713038,
+              34.825796
+            ],
+            [
+              135.712523,
+              34.826416
+            ],
+            [
+              135.713317,
+              34.826751
+            ],
+            [
+              135.713468,
+              34.826909
+            ],
+            [
+              135.713532,
+              34.827314
+            ],
+            [
+              135.713081,
+              34.82772
+            ],
+            [
+              135.712888,
+              34.828389
+            ],
+            [
+              135.712674,
+              34.829234
+            ],
+            [
+              135.712631,
+              34.830133
+            ],
+            [
+              135.712695,
+              34.830943
+            ],
+            [
+              135.712609,
+              34.831806
+            ],
+            [
+              135.71233,
+              34.832281
+            ],
+            [
+              135.711837,
+              34.832845
+            ],
+            [
+              135.708232,
+              34.834043
+            ],
+            [
+              135.70437,
+              34.835434
+            ],
+            [
+              135.700099,
+              34.835505
+            ],
+            [
+              135.69819,
+              34.835557
+            ],
+            [
+              135.696323,
+              34.835681
+            ],
+            [
+              135.695872,
+              34.835593
+            ],
+            [
+              135.694048,
+              34.836966
+            ],
+            [
+              135.698447,
+              34.841915
+            ],
+            [
+              135.70128,
+              34.846582
+            ],
+            [
+              135.70437,
+              34.84579
+            ],
+            [
+              135.707363,
+              34.845513
+            ],
+            [
+              135.70821,
+              34.845314
+            ],
+            [
+              135.709455,
+              34.845455
+            ],
+            [
+              135.710442,
+              34.845367
+            ],
+            [
+              135.711858,
+              34.845666
+            ],
+            [
+              135.71321,
+              34.845613
+            ],
+            [
+              135.713553,
+              34.843747
+            ],
+            [
+              135.713789,
+              34.842831
+            ],
+            [
+              135.714304,
+              34.841986
+            ],
+            [
+              135.715699,
+              34.840154
+            ],
+            [
+              135.717523,
+              34.836984
+            ],
+            [
+              135.718489,
+              34.835593
+            ],
+            [
+              135.718596,
+              34.835434
+            ],
+            [
+              135.717931,
+              34.8351
+            ],
+            [
+              135.717459,
+              34.834162
+            ],
+            [
+              135.716257,
+              34.83178
+            ],
+            [
+              135.715388,
+              34.829768
+            ],
+            [
+              135.71424,
+              34.827135
+            ],
+            [
+              135.7138,
+              34.826342
+            ],
+            [
+              135.713071,
+              34.825963
+            ],
+            [
+              135.713135,
+              34.82584
+            ],
+            [
+              135.713038,
+              34.825796
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "fill": "#3a6bc4",
+        "fill-opacity": 0.55,
+        "stroke": "#3a6bc4",
+        "stroke-width": 1.5,
+        "name": "マスクエリア"
+      },
+      "id": "3MH0h"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          [
+            -224.286962,
+            34.825796
+          ],
+          [
+            -224.287477,
+            34.826416
+          ],
+          [
+            -224.286683,
+            34.826751
+          ],
+          [
+            -224.286532,
+            34.826909
+          ],
+          [
+            -224.286468,
+            34.827314
+          ],
+          [
+            -224.286919,
+            34.82772
+          ],
+          [
+            -224.287112,
+            34.828389
+          ],
+          [
+            -224.287326,
+            34.829234
+          ],
+          [
+            -224.287369,
+            34.830133
+          ],
+          [
+            -224.287305,
+            34.830943
+          ],
+          [
+            -224.287391,
+            34.831806
+          ],
+          [
+            -224.28767,
+            34.832281
+          ],
+          [
+            -224.288163,
+            34.832845
+          ],
+          [
+            -224.291768,
+            34.834043
+          ],
+          [
+            -224.29563,
+            34.835434
+          ],
+          [
+            -224.299901,
+            34.835505
+          ],
+          [
+            -224.30181,
+            34.835557
+          ],
+          [
+            -224.303677,
+            34.835681
+          ],
+          [
+            -224.304128,
+            34.835593
+          ],
+          [
+            -224.305952,
+            34.836966
+          ],
+          [
+            -224.301553,
+            34.841915
+          ],
+          [
+            -224.29872,
+            34.846582
+          ],
+          [
+            -224.29563,
+            34.84579
+          ],
+          [
+            -224.292637,
+            34.845513
+          ],
+          [
+            -224.29179,
+            34.845314
+          ],
+          [
+            -224.290545,
+            34.845455
+          ],
+          [
+            -224.289558,
+            34.845367
+          ],
+          [
+            -224.288142,
+            34.845666
+          ],
+          [
+            -224.28679,
+            34.845613
+          ],
+          [
+            -224.286447,
+            34.843747
+          ],
+          [
+            -224.286211,
+            34.842831
+          ],
+          [
+            -224.285696,
+            34.841986
+          ],
+          [
+            -224.284301,
+            34.840154
+          ],
+          [
+            -224.282477,
+            34.836984
+          ],
+          [
+            -224.281511,
+            34.835593
+          ],
+          [
+            -224.281404,
+            34.835434
+          ],
+          [
+            -224.282069,
+            34.8351
+          ],
+          [
+            -224.282541,
+            34.834162
+          ],
+          [
+            -224.283743,
+            34.83178
+          ],
+          [
+            -224.284612,
+            34.829768
+          ],
+          [
+            -224.28576,
+            34.827135
+          ],
+          [
+            -224.2862,
+            34.826342
+          ],
+          [
+            -224.286929,
+            34.825963
+          ],
+          [
+            -224.286865,
+            34.82584
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "stroke": "#3a6bc4",
+        "stroke-width": 2,
+        "name": "外周線"
+      },
+      "id": "awh82"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              135.68,
+              34.82
+            ],
+            [
+              135.68,
+              34.85
+            ],
+            [
+              135.73,
+              34.85
+            ],
+            [
+              135.73,
+              34.82
+            ],
+            [
+              135.68,
+              34.82
+            ]
+          ],
+          [
+            [
+              135.713038,
+              34.825796
+            ],
+            [
+              135.712523,
+              34.826416
+            ],
+            [
+              135.713317,
+              34.826751
+            ],
+            [
+              135.713468,
+              34.826909
+            ],
+            [
+              135.713532,
+              34.827314
+            ],
+            [
+              135.713081,
+              34.82772
+            ],
+            [
+              135.712888,
+              34.828389
+            ],
+            [
+              135.712674,
+              34.829234
+            ],
+            [
+              135.712631,
+              34.830133
+            ],
+            [
+              135.712695,
+              34.830943
+            ],
+            [
+              135.712609,
+              34.831806
+            ],
+            [
+              135.71233,
+              34.832281
+            ],
+            [
+              135.711837,
+              34.832845
+            ],
+            [
+              135.708232,
+              34.834043
+            ],
+            [
+              135.70437,
+              34.835434
+            ],
+            [
+              135.700099,
+              34.835505
+            ],
+            [
+              135.69819,
+              34.835557
+            ],
+            [
+              135.696323,
+              34.835681
+            ],
+            [
+              135.695872,
+              34.835593
+            ],
+            [
+              135.694048,
+              34.836966
+            ],
+            [
+              135.698447,
+              34.841915
+            ],
+            [
+              135.70128,
+              34.846582
+            ],
+            [
+              135.70437,
+              34.84579
+            ],
+            [
+              135.707363,
+              34.845513
+            ],
+            [
+              135.70821,
+              34.845314
+            ],
+            [
+              135.709455,
+              34.845455
+            ],
+            [
+              135.710442,
+              34.845367
+            ],
+            [
+              135.711858,
+              34.845666
+            ],
+            [
+              135.71321,
+              34.845613
+            ],
+            [
+              135.713553,
+              34.843747
+            ],
+            [
+              135.713789,
+              34.842831
+            ],
+            [
+              135.714304,
+              34.841986
+            ],
+            [
+              135.715699,
+              34.840154
+            ],
+            [
+              135.717523,
+              34.836984
+            ],
+            [
+              135.718489,
+              34.835593
+            ],
+            [
+              135.718596,
+              34.835434
+            ],
+            [
+              135.717931,
+              34.8351
+            ],
+            [
+              135.717459,
+              34.834162
+            ],
+            [
+              135.716257,
+              34.83178
+            ],
+            [
+              135.715388,
+              34.829768
+            ],
+            [
+              135.71424,
+              34.827135
+            ],
+            [
+              135.7138,
+              34.826342
+            ],
+            [
+              135.713071,
+              34.825963
+            ],
+            [
+              135.713135,
+              34.82584
+            ],
+            [
+              135.713038,
+              34.825796
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "fill": "#555555",
+        "fill-opacity": 0.6,
+        "stroke": "#555555",
+        "stroke-width": 1
+      },
+      "id": "3MH0h"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          [
+            -224.286962,
+            34.825796
+          ],
+          [
+            -224.287477,
+            34.826416
+          ],
+          [
+            -224.286683,
+            34.826751
+          ],
+          [
+            -224.286532,
+            34.826909
+          ],
+          [
+            -224.286468,
+            34.827314
+          ],
+          [
+            -224.286919,
+            34.82772
+          ],
+          [
+            -224.287112,
+            34.828389
+          ],
+          [
+            -224.287326,
+            34.829234
+          ],
+          [
+            -224.287369,
+            34.830133
+          ],
+          [
+            -224.287305,
+            34.830943
+          ],
+          [
+            -224.287391,
+            34.831806
+          ],
+          [
+            -224.28767,
+            34.832281
+          ],
+          [
+            -224.288163,
+            34.832845
+          ],
+          [
+            -224.291768,
+            34.834043
+          ],
+          [
+            -224.29563,
+            34.835434
+          ],
+          [
+            -224.299901,
+            34.835505
+          ],
+          [
+            -224.30181,
+            34.835557
+          ],
+          [
+            -224.303677,
+            34.835681
+          ],
+          [
+            -224.304128,
+            34.835593
+          ],
+          [
+            -224.305952,
+            34.836966
+          ],
+          [
+            -224.301553,
+            34.841915
+          ],
+          [
+            -224.29872,
+            34.846582
+          ],
+          [
+            -224.29563,
+            34.84579
+          ],
+          [
+            -224.292637,
+            34.845513
+          ],
+          [
+            -224.29179,
+            34.845314
+          ],
+          [
+            -224.290545,
+            34.845455
+          ],
+          [
+            -224.289558,
+            34.845367
+          ],
+          [
+            -224.288142,
+            34.845666
+          ],
+          [
+            -224.28679,
+            34.845613
+          ],
+          [
+            -224.286447,
+            34.843747
+          ],
+          [
+            -224.286211,
+            34.842831
+          ],
+          [
+            -224.285696,
+            34.841986
+          ],
+          [
+            -224.284301,
+            34.840154
+          ],
+          [
+            -224.282477,
+            34.836984
+          ],
+          [
+            -224.281511,
+            34.835593
+          ],
+          [
+            -224.281404,
+            34.835434
+          ],
+          [
+            -224.282069,
+            34.8351
+          ],
+          [
+            -224.282541,
+            34.834162
+          ],
+          [
+            -224.283743,
+            34.83178
+          ],
+          [
+            -224.284612,
+            34.829768
+          ],
+          [
+            -224.28576,
+            34.827135
+          ],
+          [
+            -224.2862,
+            34.826342
+          ],
+          [
+            -224.286929,
+            34.825963
+          ],
+          [
+            -224.286865,
+            34.82584
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {},
+      "id": "awh82"
+    }
+  ]
+}

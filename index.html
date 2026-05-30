@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>調査マップ</title>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  >
+
+  <!-- 自分のCSS -->
+  <link rel="stylesheet" href="style.css">
   
 </head>
 
@@ -34,20 +41,20 @@
         </p>
     </section>
 
-  <div class="legend">
-    🔴 一時停止　/　🔵 自転車通行可能歩道
-  </div>
+  <section class="legend">
+    <p>🔴 一時停止　/　🔵 自転車通行可能歩道</p>
+  </section>
 
-  <div class="map-box">
-    <iframe
-      src="https://umap.openstreetmap.fr/ja/map/map_1404748"
-      allowfullscreen>
-    </iframe>
-  </div>
+  <div id="map"></div>
   </main>
   <footer>
      © 大阪工業大学周辺自転車走行調査マップ
   </footer>
+  <!-- LeafletのJavaScript -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- 自分のJavaScript -->
+  <script src="script.js"></script>
 
 </body>
 </html>
