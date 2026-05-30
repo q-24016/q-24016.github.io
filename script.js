@@ -29,13 +29,14 @@ L.rectangle(bounds, {
 
 // 赤いまちばり型マーカー
 const redPinIcon = L.divIcon({
-  className: "red-pin",
+  className: "red-pin-icon",
+  html: '<div class="red-pin-shape"></div>',
   iconSize: [24, 24],
   iconAnchor: [12, 24],
   popupAnchor: [0, -24]
 });
 
-// 経度 -224.xxx を 135.xxx に直す関数
+// 経度 -224.xxx を 135.xxx に修正する関数
 function fixLongitude(coords) {
   if (typeof coords[0] === "number") {
     let lng = coords[0];
@@ -51,37 +52,34 @@ function fixLongitude(coords) {
   return coords.map(fixLongitude);
 }
 
-// uMapから出力したGeoJSONを読み込む
+// GeoJSONを読み込む
 fetch("map.geojson")
-  .then(response => {
-    if (!response.ok) {
-      throw new Error("GeoJSONを読み込めません");
-    }
-    return response.json();
-  })
+  .then(response => response.json())
   .then(data => {
-    // GeoJSON内の経度を修正
     data.features.forEach(feature => {
       feature.geometry.coordinates = fixLongitude(feature.geometry.coordinates);
     });
 
     L.geoJSON(data, {
-      // 表示するデータを選ぶ
       filter: function(feature) {
         const type = feature.geometry.type;
         const name = feature.properties.name || "";
 
-        // マスクエリアは表示しない
-        if (name === "マスクエリア") {
+        // マスクエリアは非表示
+        if (type === "Polygon") {
           return false;
         }
 
-        // 外周線は表示しない
+        // 外周線は非表示
         if (name === "外周線") {
           return false;
         }
 
-        // 点と線だけ表示
+        // uMapで作った点・線だけ表示
+        if (!feature.properties._umap_options) {
+          return false;
+        }
+
         return (
           type === "Point" ||
           type === "LineString" ||
@@ -89,7 +87,7 @@ fetch("map.geojson")
         );
       },
 
-      // 線データの見た目
+      // 線データ：自転車通行可能歩道
       style: function(feature) {
         const type = feature.geometry.type;
 
@@ -102,7 +100,7 @@ fetch("map.geojson")
         }
       },
 
-      // 点データの見た目
+      // 点データ：一時停止
       pointToLayer: function(feature, latlng) {
         return L.marker(latlng, {
           icon: redPinIcon
@@ -122,8 +120,4 @@ fetch("map.geojson")
         }
       }
     }).addTo(map);
-  })
-  .catch(error => {
-    console.error(error);
-    alert("GeoJSONの読み込みに失敗しました。map.geojsonの場所や名前を確認してください。");
   });

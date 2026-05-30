@@ -59,17 +59,23 @@ footer {
   }
 }
 
-.red-pin {
+.red-pin-icon {
+  background: transparent;
+  border: none;
+}
+
+.red-pin-shape {
   width: 18px;
   height: 18px;
   background-color: red;
   border: 2px solid white;
   border-radius: 50% 50% 50% 0;
   transform: rotate(-45deg);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
+  position: relative;
 }
 
-.red-pin::after {
+.red-pin-shape::after {
   content: "";
   width: 7px;
   height: 7px;
