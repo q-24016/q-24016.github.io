@@ -218,3 +218,7 @@ function showStatus(element, message) {
     element.classList.remove("is-hidden");
   }
 }
+
+function isBikeLaneFeature(feature) {
+  return feature.properties?.name === "自転車レーン";
+}
