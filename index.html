@@ -3,58 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>大阪工業大学周辺調査マップ</title>
 
-  <title>調査マップ</title>
   <link
     rel="stylesheet"
     href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
   >
-
-  <!-- 自分のCSS -->
   <link rel="stylesheet" href="style.css">
-  
 </head>
 
 <body>
-
-  <header>
+  <header class="site-header">
     <h1>大阪工業大学周辺調査マップ</h1>
-    
   </header>
-  <main>
-    <section class = "introduction">
-        <h2>概要</h2>
-        <p>
-        本サイトは、大阪工業大学周辺における自転車走行時の交通ルールを
-        確認するためのWebマップである。歩道通行が可能な区間や、一時停
-        止が必要な交差点を地図上に示すことで、学生が通学時に安全な走行
-        ルートを確認できるようにすることを目的としている。
-        </p>
+
+  <main class="page-container">
+    <section class="content-card" aria-labelledby="about-title">
+      <h2 id="about-title">概要</h2>
+      <p>
+        本サイトは、大阪工業大学周辺における自転車走行時の交通ルールを確認するためのWebマップである。
+        歩道通行が可能な区間や、一時停止が必要な交差点を地図上に示すことで、学生が通学時に安全な走行ルートを確認できるようにすることを目的としている。
+      </p>
     </section>
 
-    <section class = "important-points">
-        <h2>注意点</h2>
-        <p>
+    <section class="content-card" aria-labelledby="caution-title">
+      <h2 id="caution-title">注意点</h2>
+      <p>
         自転車は原則として車道を通行する必要がある。
         ただし、「普通自転車歩道通行可」の標識や道路標示がある場所などでは、歩道を通行できる場合がある。
         また、一時停止の標識がある交差点では、必ず停止して安全確認を行う必要がある。
-        </p>
+      </p>
     </section>
 
-  <section class="legend">
-    <p>📍 一時停止　/　🔵 自転車通行可能歩道</p>
-  </section>
+    <section class="content-card legend" aria-labelledby="legend-title">
+      <h2 id="legend-title" class="visually-hidden">凡例</h2>
+      <ul class="legend-list">
+        <li><span class="legend-symbol legend-symbol--stop" aria-hidden="true"></span>一時停止</li>
+        <li><span class="legend-symbol legend-symbol--bike" aria-hidden="true"></span>自転車通行可能歩道</li>
+      </ul>
+    </section>
 
-  <div id="map"></div>
+    <p id="mapStatus" class="map-status" role="status" aria-live="polite">
+      地図データを読み込み中です。
+    </p>
+    <div id="map" class="map" aria-label="大阪工業大学周辺の交通ルール調査マップ"></div>
   </main>
-  <footer>
-     © 大阪工業大学周辺自転車走行調査マップ
+
+  <footer class="site-footer">
+    <small>&copy; 大阪工業大学周辺自転車走行調査マップ</small>
   </footer>
-  <!-- LeafletのJavaScript -->
+
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-
-  <!-- 自分のJavaScript -->
-  <script src="script.js"></script>
-
+  <script src="script.js" defer></script>
 </body>
 </html>

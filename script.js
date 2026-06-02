@@ -1,123 +1,220 @@
-// 表示・移動を許可する範囲
-const bounds = L.latLngBounds(
-  [34.824232, 135.688577],
-  [34.847057, 135.718231]
-);
+"use strict";
 
-// 地図を作成
-const map = L.map("map", {
+const MAP_CONFIG = Object.freeze({
+  targetId: "map",
+  geoJsonPath: "map.geojson",
   center: [34.840225, 135.705314],
-  zoom: 16,
-  minZoom: 15,
-  maxZoom: 19,
-  maxBounds: bounds,
-  maxBoundsViscosity: 1.0
+  bounds: {
+    southWest: [34.824232, 135.688577],
+    northEast: [34.847057, 135.718231]
+  },
+  zoom: {
+    initial: 16,
+    min: 15,
+    max: 19
+  }
 });
 
-// OpenStreetMapの地図タイルを表示
-L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-  maxZoom: 19,
-  attribution: '&copy; OpenStreetMap contributors'
-}).addTo(map);
+const STYLE = Object.freeze({
+  bikeLane: {
+    color: "#2563eb",
+    weight: 4,
+    opacity: 0.85
+  },
+  surveyBounds: {
+    color: "#f59e0b",
+    weight: 2,
+    fill: false
+  }
+});
 
-// 調査範囲を確認用に表示
-L.rectangle(bounds, {
-  color: "orange",
-  weight: 2,
-  fill: false
-}).addTo(map);
+const DISPLAY_GEOMETRY_TYPES = new Set(["Point", "LineString", "MultiLineString"]);
+const HIDDEN_FEATURE_NAMES = new Set(["外周線"]);
+const HIDDEN_GEOMETRY_TYPES = new Set(["Polygon", "MultiPolygon"]);
 
-// 赤いまちばり型マーカー
 const redPinIcon = L.divIcon({
   className: "red-pin-icon",
-  html: '<div class="red-pin-shape"></div>',
+  html: '<div class="red-pin-shape" aria-hidden="true"></div>',
   iconSize: [24, 24],
   iconAnchor: [12, 24],
   popupAnchor: [0, -24]
 });
 
-// 経度 -224.xxx を 135.xxx に修正する関数
-function fixLongitude(coords) {
-  if (typeof coords[0] === "number") {
-    let lng = coords[0];
-    const lat = coords[1];
+initializeMap();
 
-    if (lng < -180) {
-      lng = lng + 360;
-    }
+function initializeMap() {
+  const bounds = createBounds(MAP_CONFIG.bounds);
+  const map = createMap(bounds);
 
-    return [lng, lat];
-  }
-
-  return coords.map(fixLongitude);
+  addBaseTileLayer(map);
+  addSurveyBounds(map, bounds);
+  loadSurveyData(map);
 }
 
-// GeoJSONを読み込む
-fetch("map.geojson")
-  .then(response => response.json())
-  .then(data => {
-    data.features.forEach(feature => {
-      feature.geometry.coordinates = fixLongitude(feature.geometry.coordinates);
-    });
+function createBounds(boundsConfig) {
+  return L.latLngBounds(boundsConfig.southWest, boundsConfig.northEast);
+}
 
-    L.geoJSON(data, {
-      filter: function(feature) {
-        const type = feature.geometry.type;
-        const name = feature.properties.name || "";
-
-        // マスクエリアは非表示
-        if (type === "Polygon") {
-          return false;
-        }
-
-        // 外周線は非表示
-        if (name === "外周線") {
-          return false;
-        }
-
-        // uMapで作った点・線だけ表示
-        if (!feature.properties._umap_options) {
-          return false;
-        }
-
-        return (
-          type === "Point" ||
-          type === "LineString" ||
-          type === "MultiLineString"
-        );
-      },
-
-      // 線データ：自転車通行可能歩道
-      style: function(feature) {
-        const type = feature.geometry.type;
-
-        if (type === "LineString" || type === "MultiLineString") {
-          return {
-            color: "blue",
-            weight: 4,
-            opacity: 0.8
-          };
-        }
-      },
-
-      // 点データ：一時停止
-      pointToLayer: function(feature, latlng) {
-        return L.marker(latlng, {
-          icon: redPinIcon
-        });
-      },
-
-      // クリック時のポップアップ
-      onEachFeature: function(feature, layer) {
-        const name = feature.properties.name || "";
-        const description = feature.properties.description || "";
-
-        if (name || description) {
-          layer.bindPopup(`
-            <strong>${name}</strong><br>
-            ${description}
-          `);
-        }
-      }
-    }).addTo(map);
+function createMap(bounds) {
+  return L.map(MAP_CONFIG.targetId, {
+    center: MAP_CONFIG.center,
+    zoom: MAP_CONFIG.zoom.initial,
+    minZoom: MAP_CONFIG.zoom.min,
+    maxZoom: MAP_CONFIG.zoom.max,
+    maxBounds: bounds,
+    maxBoundsViscosity: 1.0
   });
+}
+
+function addBaseTileLayer(map) {
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: MAP_CONFIG.zoom.max,
+    attribution: '&copy; OpenStreetMap contributors'
+  }).addTo(map);
+}
+
+function addSurveyBounds(map, bounds) {
+  L.rectangle(bounds, STYLE.surveyBounds).addTo(map);
+}
+
+async function loadSurveyData(map) {
+  const statusElement = document.getElementById("mapStatus");
+
+  try {
+    const geoJson = await fetchGeoJson(MAP_CONFIG.geoJsonPath);
+    const normalizedGeoJson = normalizeGeoJson(geoJson);
+
+    L.geoJSON(normalizedGeoJson, {
+      filter: shouldDisplayFeature,
+      style: getFeatureStyle,
+      pointToLayer: createPointMarker,
+      onEachFeature: bindPopup
+    }).addTo(map);
+
+    hideStatus(statusElement);
+  } catch (error) {
+    console.error(error);
+    showStatus(statusElement, "地図データを読み込めませんでした。ファイル名や配置場所を確認してください。");
+  }
+}
+
+async function fetchGeoJson(path) {
+  const response = await fetch(path);
+
+  if (!response.ok) {
+    throw new Error(`GeoJSONの読み込みに失敗しました: ${response.status}`);
+  }
+
+  return response.json();
+}
+
+function normalizeGeoJson(geoJson) {
+  return {
+    ...geoJson,
+    features: geoJson.features.map((feature) => ({
+      ...feature,
+      geometry: normalizeGeometry(feature.geometry)
+    }))
+  };
+}
+
+function normalizeGeometry(geometry) {
+  if (!geometry || !geometry.coordinates) {
+    return geometry;
+  }
+
+  return {
+    ...geometry,
+    coordinates: normalizeCoordinates(geometry.coordinates)
+  };
+}
+
+function normalizeCoordinates(coordinates) {
+  if (isCoordinatePair(coordinates)) {
+    const [longitude, latitude] = coordinates;
+    return [normalizeLongitude(longitude), latitude];
+  }
+
+  return coordinates.map(normalizeCoordinates);
+}
+
+function isCoordinatePair(value) {
+  return Array.isArray(value) && typeof value[0] === "number" && typeof value[1] === "number";
+}
+
+function normalizeLongitude(longitude) {
+  return longitude < -180 ? longitude + 360 : longitude;
+}
+
+function shouldDisplayFeature(feature) {
+  const type = feature.geometry?.type;
+  const name = feature.properties?.name ?? "";
+
+  if (HIDDEN_GEOMETRY_TYPES.has(type) || HIDDEN_FEATURE_NAMES.has(name)) {
+    return false;
+  }
+
+  if (!feature.properties?._umap_options) {
+    return false;
+  }
+
+  return DISPLAY_GEOMETRY_TYPES.has(type);
+}
+
+function getFeatureStyle(feature) {
+  const type = feature.geometry?.type;
+
+  if (type === "LineString" || type === "MultiLineString") {
+    return STYLE.bikeLane;
+  }
+
+  return undefined;
+}
+
+function createPointMarker(_feature, latLng) {
+  return L.marker(latLng, { icon: redPinIcon });
+}
+
+function bindPopup(feature, layer) {
+  const name = feature.properties?.name ?? "";
+  const description = feature.properties?.description ?? "";
+
+  if (!name && !description) {
+    return;
+  }
+
+  layer.bindPopup(createPopupHtml(name, description));
+}
+
+function createPopupHtml(name, description) {
+  const escapedName = escapeHtml(name);
+  const escapedDescription = escapeHtml(description);
+
+  if (escapedName && escapedDescription) {
+    return `<strong>${escapedName}</strong><br>${escapedDescription}`;
+  }
+
+  return escapedName || escapedDescription;
+}
+
+function escapeHtml(text) {
+  return String(text)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
+
+function hideStatus(element) {
+  if (element) {
+    element.classList.add("is-hidden");
+  }
+}
+
+function showStatus(element, message) {
+  if (element) {
+    element.textContent = message;
+    element.classList.remove("is-hidden");
+  }
+}
