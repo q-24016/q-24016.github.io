@@ -33,6 +33,18 @@ body {
   }
 }
 
+.text-red {
+  color: #e60023;
+  font-weight: bold;
+}
+
+.underline-red {
+  text-decoration: underline;
+  text-decoration-color: #e60023;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
 .site-header,
 .site-footer {
   background: var(--color-surface);
