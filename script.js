@@ -16,15 +16,34 @@ const MAP_CONFIG = Object.freeze({
 });
 
 const STYLE = Object.freeze({
-  bikeLane: {
+  // 自転車通行可能歩道：青色
+  bikeSidewalk: {
     color: "#2563eb",
     weight: 4,
-    opacity: 0.85
+    opacity: 1
   },
+
+  // 自転車レーン：黄色
+  bikeLane: {
+    color: "#f2c200",
+    weight: 5,
+    opacity: 1
+  },
+
+  // 調査範囲の枠線
   surveyBounds: {
     color: "#f59e0b",
     weight: 2,
     fill: false
+  },
+
+  // 調査範囲外を薄い黒で表示
+  outOfAreaMask: {
+    color: "#111827",
+    weight: 0,
+    fillColor: "#111827",
+    fillOpacity: 0.22,
+    interactive: false
   }
 });
 
@@ -139,7 +158,9 @@ function normalizeCoordinates(coordinates) {
 }
 
 function isCoordinatePair(value) {
-  return Array.isArray(value) && typeof value[0] === "number" && typeof value[1] === "number";
+  return Array.isArray(value) &&
+    typeof value[0] === "number" &&
+    typeof value[1] === "number";
 }
 
 function normalizeLongitude(longitude) {
@@ -150,22 +171,46 @@ function shouldDisplayFeature(feature) {
   const type = feature.geometry?.type;
   const name = feature.properties?.name ?? "";
 
-  if (HIDDEN_GEOMETRY_TYPES.has(type) || HIDDEN_FEATURE_NAMES.has(name)) {
+  // マスクエリアは範囲外表示として使うので表示する
+  if (isMaskFeature(feature)) {
+    return true;
+  }
+
+  // 外周線は表示しない
+  if (HIDDEN_FEATURE_NAMES.has(name)) {
     return false;
   }
 
+  // PolygonやMultiPolygonは基本的に表示しない
+  if (HIDDEN_GEOMETRY_TYPES.has(type)) {
+    return false;
+  }
+
+  // uMapで作った点・線以外は表示しない
   if (!feature.properties?._umap_options) {
     return false;
   }
 
+  // Point / LineString / MultiLineString のみ表示
   return DISPLAY_GEOMETRY_TYPES.has(type);
 }
 
 function getFeatureStyle(feature) {
   const type = feature.geometry?.type;
 
-  if (type === "LineString" || type === "MultiLineString") {
+  // マスクエリア：範囲外を薄い黒で表示
+  if (isMaskFeature(feature)) {
+    return STYLE.outOfAreaMask;
+  }
+
+  // 自転車レーン：黄色
+  if (isBikeLaneFeature(feature)) {
     return STYLE.bikeLane;
+  }
+
+  // 自転車通行可能歩道：青色
+  if (type === "LineString" || type === "MultiLineString") {
+    return STYLE.bikeSidewalk;
   }
 
   return undefined;
@@ -221,4 +266,11 @@ function showStatus(element, message) {
 
 function isBikeLaneFeature(feature) {
   return feature.properties?.name === "自転車レーン";
+}
+
+function isMaskFeature(feature) {
+  return (
+    feature.geometry?.type === "Polygon" &&
+    feature.properties?.name === "マスクエリア"
+  );
 }
