@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   --color-bg: #f5f7fa;
   --color-surface: #ffffff;
   --color-text: #333333;
@@ -27,7 +27,13 @@ body {
     flex-direction: column;
   }
 
-  .survey-button {
+  .header-actions {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .survey-button,
+  .map-only-button {
     width: 100%;
     text-align: center;
   }
@@ -71,6 +77,25 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
+}
+
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.map-only-button {
+  display: inline-block;
+  padding: 20px 28px;
+  background-color: #0f766e;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  white-space: nowrap;
 }
 
 .survey-button {
@@ -234,3 +259,5 @@ body {
     min-height: 360px;
   }
 }
+
+
