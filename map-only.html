@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Map Only</title>
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  >
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    body {
+      background: #ffffff;
+    }
+
+    .map-only-container {
+      position: fixed;
+      inset: 0;
+    }
+
+    .map-only-status {
+      position: fixed;
+      z-index: 1000;
+      top: 12px;
+      left: 50%;
+      transform: translateX(-50%);
+      margin: 0;
+      padding: 8px 12px;
+      background: rgba(255, 255, 255, 0.92);
+      border: 1px solid rgba(15, 23, 42, 0.12);
+      border-radius: 8px;
+      color: #334155;
+      font-size: 14px;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.12);
+    }
+
+    .map-only-container .map {
+      width: 100vw;
+      height: 100vh;
+      min-height: 100vh;
+      border: 0;
+      border-radius: 0;
+      box-shadow: none;
+    }
+  </style>
+</head>
+<body>
+  <main class="map-only-container">
+    <p id="mapStatus" class="map-status map-only-status" role="status" aria-live="polite">
+      Loading map data...
+    </p>
+    <div id="map" class="map" aria-label="Bicycle traffic rule map"></div>
+  </main>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
